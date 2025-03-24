@@ -7,8 +7,10 @@
 
 DEVICE_PATH := device/infinix/Infinix-X6532C
 
-# For building with minimal manifest
+#build hacks
 ALLOW_MISSING_DEPENDENCIES := true
+BUILD_BROKEN_DUP_RULES := true
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 
 # A/B
 AB_OTA_UPDATER := true
