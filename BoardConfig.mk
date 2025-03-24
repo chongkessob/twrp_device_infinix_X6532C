@@ -108,3 +108,9 @@ TW_INCLUDE_REPACKTOOLS := true
 
 # Vendor Modules
 TW_LOAD_VENDOR_MODULES := $(shell echo \"$(shell ls $(DEVICE_PATH)/recovery/root/lib/modules) $(shell ls $(DEVICE_PATH)/recovery/root/vendor/lib/modules)\")
+
+#maintainer
+BOARD_MAINTAINER_NAME := Chongkessob | X6532
+TW_DEVICE_VERSION := $(BOARD_MAINTAINER_NAME)
+OF_MAINTAINER := $(BOARD_MAINTAINER_NAME)
+PB_MAIN_VERSION := $(BOARD_MAINTAINER_NAME)
